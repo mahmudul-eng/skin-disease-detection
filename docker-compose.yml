@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  skin-disease-api:
+    build: .
+    container_name: skin_disease_detection
+    ports:
+      - "8000:8000"   # FastAPI
+      - "7860:7860"   # Gradio
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - NGROK_AUTH_TOKEN=${NGROK_AUTH_TOKEN}
+    volumes:
+      - ./models:/app/models   # Mount models folder
+    restart: unless-stopped
