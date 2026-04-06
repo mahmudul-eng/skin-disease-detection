@@ -159,7 +159,7 @@ cp .env.example .env
 ```
 
 **3. Download model weights:**
-- Download `best_model.pt` from [Google Drive](YOUR_GOOGLE_DRIVE_LINK_HERE)
+- Download `best_model.pt` from [Google Drive](https://drive.google.com/drive/folders/1W920dOjGfHkkpIgnu-iBvlG45gbPMuPx?usp=sharing)
 - Place it inside the `models/` folder
 
 **4. Build and run with Docker Compose:**
@@ -182,7 +182,7 @@ docker-compose down
 
 ### Base URL
 ```
-https://nonecstatically-tabulable-jovanni.ngrok-free.app
+https://your-ngrok-url.ngrok-free.app
 ```
 
 ### Endpoints
